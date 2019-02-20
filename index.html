@@ -1,21 +1,46 @@
-<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Guessing Game</title>
-    <link rel="stylesheet" href="main.css">
-    <!-- the MAIN.CSS file is linked here -->
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- the MAIN.CSS file is linked here -->
+  <script src="../js/guessing-game.js" defer></script>
+</head>
 
-  <body>
+<body>
+
+  <div id='game'>
+
+    <div class='center'>
+      <h1>Pick a Number ;)</h1>
+      <h2>These little kittens will share their pie with you... if you can guess correctly!</h2>
+    </div>
+
+    <h3 id='feedback' class='center'></h3>
 
 
+    <div>
+      <div id='player-input'>
+        <input class='center' maxlength='3' placeholder='1-100'></input>
+        <button id='submit'>Guess</button>
+        <button id='reset'>Play Again</button>
+      </div>
 
+      <div class='center'>
+        <ul>
+          <li id='guess1'>?</li>
+          <li id='guess2'>?</li>
+          <li id='guess3'>?</li>
+          <li id='guess4'>?</li>
+          <li id='guess5'>?</li>
+        </ul>
+      </div>
 
+    </div>
+  </div>
 
-    <!-- <script src='js/guessing-game.js'></script> -->
-    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
-  </body>
+<script src='js/guessing-game.js'></script>
+</body>
 
 </html>

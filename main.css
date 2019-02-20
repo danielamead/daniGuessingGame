@@ -1,1 +1,50 @@
-/* Write your CSS code in this file */
+body {
+  background-image: url(http://www.candaceshaw.ca/wp-content/uploads/2011/10/three-little-kittens.jpg);
+}
+
+#game {
+  background-color: rgba(255, 255, 255, 0.514);
+  font-family: sans-serif;
+  font-style: bold;
+  color: rgb(71, 3, 71);
+}
+
+.center {
+  text-align: center;
+}
+
+#player-input {
+  width: 160px;
+  margin: 5% auto 50px;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#guess1, #guess2, #guess3, #guess4, #guess5 {
+  display: inline;
+  font-size: 50px;
+}
+
+#guess1 {
+  color: red;
+}
+
+#guess2 {
+  color: orange;
+}
+
+#guess3 {
+  color: green;
+}
+
+#guess4 {
+  color: blue;
+}
+
+#guess5 {
+  color: purple;
+}
