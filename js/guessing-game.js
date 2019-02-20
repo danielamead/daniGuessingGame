@@ -20,10 +20,10 @@ class Game {
   playersGuessSubmission(guess) {
     if (typeof guess === 'number' && guess >= 1 && guess <= 100) {
       this.playersGuess = guess;
+      return this.checkGuess();
     } else {
       document.querySelector('#feedback').innerHTML = 'That is an invalid guess.';
     }
-    return this.checkGuess();
   }
 
   checkGuess() {
